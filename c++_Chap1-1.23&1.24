@@ -1,0 +1,22 @@
+#include <iostream>
+#include "Sales_item.h"
+using namespace std;
+int main()
+{
+    Sales_item a, b; 
+    int cnt;
+    if(cin >> a){
+        cnt = 1;
+        while(cin >> b){
+            if(a.isbn() == b.isbn())
+                cnt++;
+            else{
+                cout << a.isbn() << " occurs " << cnt << " times "<< endl;
+                cnt = 1;
+                a = b;
+            }
+        }
+        cout << a.isbn() << " occurs " << cnt << " times "<< endl;
+    }
+    return 0;
+}
