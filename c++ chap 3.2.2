@@ -40,6 +40,9 @@ getline读取所有的，遇到换行符就直接输出，如果开始就是换�
 
 
 
+
+
+
 exercise3.4
 #include <iostream>
 using namespace std;
@@ -73,4 +76,28 @@ int main()
 
 
 
+exercise 3.5
+
+#include <iostream>
+using namespace std;
+int main(){
+    string s, t;
+    while(cin >> s) {
+        t += s;
+        cout << t << endl;
+    }
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    string s, t;
+    while(cin >> s) {
+        t += s + " ";
+        cout << t << endl;
+    }
+    return 0;
+}
 
