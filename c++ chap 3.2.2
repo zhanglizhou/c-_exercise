@@ -41,5 +41,36 @@ getline读取所有的，遇到换行符就直接输出，如果开始就是换�
 
 
 exercise3.4
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s1, s2;
+    cin >> s1 >> s2;
+    if(s1 > s2)
+        cout << s1 << endl;
+    else
+        cout << s2 << endl;
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s1, s2;
+    cin >> s1 >> s2;
+    if(s1.size() == s2.size())
+        cout << "same size" << endl;
+
+    else if(s1.size() < s2.size())
+        cout << s2 << endl;
+    else
+        cout << s1 << endl;
+    return 0;
+}
+
+
 
 
