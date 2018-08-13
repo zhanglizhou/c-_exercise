@@ -1,0 +1,45 @@
+exercise 3.2:
+
+/*
+**一次读入一个词
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s;
+    while(cin >> s)
+        cout << s << endl;
+    return 0;
+}
+
+/*
+**一次输入一整行
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s;
+    while(getline(cin, s))
+        cout << s << endl;
+    return 0;
+}
+
+
+
+
+
+
+exercise 3.3
+输入运算符会自动的忽略开头的空白（space，tab，enter）并从第一个真正的字符开始读，直到遇到下一个空白为止(p77)
+getline读取所有的，遇到换行符就直接输出，如果开始就是换行符号，那么输出一个空的string
+
+
+
+
+exercise3.4
+
+
