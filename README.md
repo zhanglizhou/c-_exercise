@@ -1,1 +1,1 @@
-# c-_exercise
+# c++ prime homework
